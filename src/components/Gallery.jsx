@@ -35,7 +35,7 @@ const Gallery = ({tours, setTours, onRemove}) => {
                 <button onClick={fetchTours}>Refresh</button>
             </div>
         ); //rendering no tours state
-    };
+    }; //TASK 4: LOADING AND ERROR STATES
 
     return (
         <section className="gallery">

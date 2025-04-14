@@ -8,7 +8,7 @@ const Gallery = ({tours, setTours, onRemove}) => {
 //fetching data from the API
     const fetchTours = async () => {
         try {
-            const response = await fetch("https://course-api.com/react-tours-project"); //data url
+            const response = await fetch("https://api.allorigins.win/raw?url=https://course-api.com/react-tours-project"); //data url used to fix CORS error
             const data = await response.json();
             setTours(data);
         } catch (error) {

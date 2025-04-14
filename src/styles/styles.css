@@ -1,53 +1,67 @@
-body {
-    font-family: sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-  }
-  
-  main {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .gallery {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  .tour-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tour-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .tour-info {
-    padding: 1rem;
-  }
-  
-  .tour-info h2 {
-    margin: 0.5rem 0;
-  }
-  
-  .btn-remove {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn-remove:hover {
-    background: #e63946;
-  }
-  
+/* General styles for tour cards */
+.tour-card {
+  background-color: #d8ebfb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tour-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.tour-card .content {
+  padding: 16px;
+}
+
+.tour-card .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.tour-card .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.tour-card .price {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2a9d8f;
+  margin-bottom: 16px;
+}
+
+/* Button styles */
+.tour-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tour-card .btn:hover {
+  background-color: #21867a;
+}
+
+/* used copilot to create the tour explorer page */

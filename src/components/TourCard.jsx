@@ -6,8 +6,8 @@ const TourCard = ({id, name, info, price, image, onRemove}) => {
     return (
         <div className ="tour-card">
         <h3>{name}</h3>
+        <h5>${price}</h5>
         <img src={image} alt={name} />
-        <h5>{price}</h5>
         <p>
             {/* shows full description if readMore is true, otherwise shows first 100 characters */}
             {readMore ? info : `${info.substring(0, 100)}...`}
@@ -15,7 +15,7 @@ const TourCard = ({id, name, info, price, image, onRemove}) => {
                 {/* toggles readMore state */}
                 {readMore ? "Show Less" : "Read More"}</button></p>
         {/* button to remove the tour from the list */}
-        <button className="remove-btn" onClick={() => onRemove(id)}>Remove ID</button>
+        <button className="remove-btn" onClick={() => onRemove(id)}>Not Interested</button>
         </div>
     )
 }

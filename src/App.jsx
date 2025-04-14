@@ -1,6 +1,7 @@
 //Task 1: Setup Root Component (App.jsx)
 import React, {useState} from "react";
 import Gallery from "./components/Gallery";
+import"./styles/styles.css"; //importing styles
 
 function App() {
   const [tours, setTours] = useState([]); //root component of app
